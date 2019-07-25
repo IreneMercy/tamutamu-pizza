@@ -1,0 +1,26 @@
+.first-bg{
+  background-image: url(../images/banner-bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+#pizza{
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+#tamu{
+  color: white;
+  text-transform: uppercase;
+  /* font-family: 'Bonbon', cursive; */
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-weight: bold;
+}
+.pitsa{
+  border: 2px solid #fff;
+}
+.banner-bg{
+  position:relative;
+  background-color: black;
+  opacity: 0.7;
+  height: auto;
+}
