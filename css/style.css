@@ -28,6 +28,7 @@
 
 /* Size */
 .medium-size{
+  color: orange;
   font-family: 'Sedgwick Ave Display', cursive;
 }
 .add{
@@ -35,26 +36,29 @@
   padding-top: 1%;
   padding-bottom: 1%;
   border:none;
-  background-color:transparent;
-  color: red;
+  background-color:black;
+  color:orangered;
   font-size: 18px;
   font-family: 'Sedgwick Ave Display', cursive;
+  font-size:30px;
+  border-radius: 10px;
+  /* border: 2px solid #000; */
 
 }
 .card{
-  font-family: 'Sedgwick Ave Display', cursive;
-  background-color:wheat;
+  font-family:cursive;
+  background-color:white;
   height: auto;
 }
 .card-header{
   color:orangered;
 }
 .card-footer{
-  color: red;
   text-transform: uppercase;
 }
 .flavour{
   display: inline-block;
+  background-color: transparent;
 }
 .flavour h6{
   color: black;
@@ -69,5 +73,17 @@
 }
 .description{
   color: black;
+}
+
+.flavour-type{
+  font-family: 'Sedgwick Ave Display', cursive;
+  color:orangered;
+}
+
+.input-group{
+  background-color: transparent;
+}
+.quantity{
+  background-color: transparent;
 }
 /* End of size */
