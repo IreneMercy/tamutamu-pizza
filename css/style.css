@@ -25,6 +25,8 @@
   height: auto;
 }
 /* End of header */
+
+/* Size */
 .medium-size{
   font-family: 'Sedgwick Ave Display', cursive;
 }
@@ -45,24 +47,27 @@
   height: auto;
 }
 .card-header{
-  color: red;
+  color:orangered;
 }
 .card-footer{
   color: red;
   text-transform: uppercase;
 }
-
 .flavour{
   display: inline-block;
 }
-#price h6{
-  color: red;
-}
-#price p{
+.flavour h6{
   color: black;
-  font-family: georgia;
 }
 .price{
   color: black;
   font-family:georgia;
 }
+
+.quantity{
+  width: 20%;
+}
+.description{
+  color: black;
+}
+/* End of size */

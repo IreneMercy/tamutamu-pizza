@@ -17,76 +17,250 @@
         </div>
 
         <!--End of Header -->
+
         <!-- Sizes -->
         <div class="container-fluid mt-5">
            <div class="row">
              <div class="col-md-12 text-center">
-               <h3 class="medium-size text-white">Medium Size</h3>
+               <h3 class="medium-size text-white">Tmutamu Pricing</h3>
                </div>
            </div>
+          <div class="form">
+            <!-- Chicken tikka -->
            <div class="row">
-             <div class="col-md-12">
-               <div class="card">
-                 <div class="card-header">
-                   <div class="flavour">
-                     <h5>Flavour</h5>
-                     <select class="flavour" name="flavour">
-                       <option value="Chicken Tika">Chicken Tika</option>
-                     </select>
+              <div class="col-md-4">
+                <div class="card">
+                   <div class="card-header">
+                     <div class="flavour-type ml-3">
+                       <h5>Chicken Tikka</h5>
+                       <p class="description">Marinated tikka chicken</p>
+                       <hr>
+                     </div>
+                     <div class="flavour">
+                       <h6>Size</h6>
+                       <select class="input-group price" name="Quantity">
+                          <option>Small <span class="price">Ksh.450</span> </option>
+                          <option>Medium <span class="price">Ksh.750</span> </option>
+                          <option>Large <span class="price">Ksh.1500</span> </option>
+                       </select>
+                     </div>
+                     <div class="flavour">
+                       <h6>Quantity</h6>
+                       <input class="quantity" type="number" name="number" value="1">
+                     </div>
+                     <!-- <div class="flavour mr-5">
+                       <h6>Price</h6>
+                       <p class="price ">Ksh.750</p>
+                     </div> -->
+                     <div class="flavour ">
+                       <h6>Total</h6>
+                       <p class="price total">Ksh.</p>
+                     </div>
                    </div>
-                   <div class="flavour">
-                     <h6>Quantity</h6>
-                     <select class="quantity" name=""Quantity>
-                        <option value="1">1</option>
-                        <option value="1">2</option>
-                        <option value="1">3</option>
-                        <option value="1">4</option>
-                        <option value="1">5</option>
-                     </select>
-                   </div>
-                   <div class="flavour" id="price">
-                     <h6>Price</h6>
-                     <p>Ksh.750</p>
-                   </div>
-                 </div>
-                 <div class="card-body">
-                   <div class="row">
-                     <div class="col-md-12">
-                       <div class="flavour">
-                         <h6>Topping</h6>
-                         <select class="quantity" name=""Quantity>
-                            <option value="1">Hawaian</option>
-                            <option value="1">2</option>
-                            <option value="1">3</option>
-                            <option value="1">4</option>
-                            <option value="1">5</option>
-                         </select>
-                         <h6 class="price pt-2">ksh.200</h6>
+                   <!-- End of card-header -->
+
+                   <!-- Card body -->
+                   <div class="card-body">
+                     <div class="row">
+                       <div class="col-md-6">
+                         <div class="form-control flavour">
+                           <h6>Toppings <span class="price">Ksh.150</span> </h6>
+                           <select class="input-group" name="Quantity">
+                              <option>None</option>
+                              <option>Pepperoni</option>
+                              <option>Mushrooms</option>
+                              <option>Onion</option>
+                              <option>Sausage</option>
+                              <option>Bacon</option>
+                              <option>Pineapple</option>
+                              <option>Spinach</option>
+                              <option>Extra cheese</option>
+                              <option>Black OLives</option>
+                              <option>Green peppers</option>
+                           </select>
+                         </div>
                        </div>
-                       <div class="flavour ml-5">
-                         <h6>Crust</h6>
-                         <select class="quantity" name=""Quantity>
-                            <option value="1">Onion</option>
-                            <option value="1">2</option>
-                            <option value="1">3</option>
-                            <option value="1">4</option>
-                            <option value="1">5</option>
-                         </select>
-                         <h6 class="price pt-2">ksh.300</h6>
+                       <div class="col-md-6">
+                         <div class="form-control flavour">
+                           <h6>Crust <span class="price">Ksh.200</span> </h6>
+                           <select class="input-group" name=""Quantity>
+                              <option>None</option>
+                              <option>Crispy</option>
+                              <option>Stuffed</option>
+                              <option>Gluten-free</option>
+                              <option>Grilled</option>
+                              <option>Flat bread</option>
+                              <option>Cracker</option>
+                           </select>
+                         </div>
                        </div>
                      </div>
                    </div>
-                 </div>
-                 <div class="card-footer">
-                   <div class="row">
-                     <div class="col-md-12">
-                       <input class="add" type="submit" name="add" value="Add">
-                     </div>
+                   <div class="card-footer text-center">
+                     <div class="flavour" id="add-to-cart">
+                         <div class="add-cart">
+                           <input class="add" type="submit" name="add" value="Add to cart">
+                         </div>
                    </div>
-                 </div>
-               </div>
+                </div>
+            </div>
              </div>
+
+     <!-- Hawaian -->
+                <div class="col-md-4">
+                  <div class="card">
+                     <div class="card-header">
+                       <div class="flavour-type ml-3">
+                         <h5>Hawaian</h5>
+                         <p class="description">Macon-pineapple</p>
+                         <hr>
+                       </div>
+                       <div class="flavour">
+                         <h6>Size</h6>
+                         <select class="input-group price" name="Quantity">
+                            <option>Small <span class="price">Ksh.450</span> </option>
+                            <option>Medium <span class="price">Ksh.750</span> </option>
+                            <option>Large <span class="price">Ksh.1500</span> </option>
+                         </select>
+                       </div>
+                       <div class="flavour">
+                         <h6>Quantity</h6>
+                         <input class="quantity" type="number" name="number" value="1">
+                       </div>
+                       <div class="flavour ">
+                         <h6>Total</h6>
+                         <p class="price total">Ksh.</p>
+                       </div>
+                     </div>
+                     <!-- End of card-header -->
+
+                     <!-- Card body -->
+                     <div class="card-body">
+                       <div class="row">
+                         <div class="col-md-6">
+                           <div class="form-control flavour">
+                             <h6>Toppings <span class="price">Ksh.150</span> </h6>
+                             <select class="input-group" name="Quantity">
+                                <option>None</option>
+                                <option>Pepperoni</option>
+                                <option>Mushrooms</option>
+                                <option>Onion</option>
+                                <option>Sausage</option>
+                                <option>Bacon</option>
+                                <option>Pineapple</option>
+                                <option>Spinach</option>
+                                <option>Extra cheese</option>
+                                <option>Black OLives</option>
+                                <option>Green peppers</option>
+                             </select>
+                           </div>
+                         </div>
+                         <div class="col-md-6">
+                           <div class="form-control flavour">
+                             <h6>Crust <span class="price">Ksh.200</span> </h6>
+                             <select class="input-group" name=""Quantity>
+                                <option>None</option>
+                                <option>Crispy</option>
+                                <option>Stuffed</option>
+                                <option>Gluten-free</option>
+                                <option>Grilled</option>
+                                <option>Flat bread</option>
+                                <option>Cracker</option>
+                             </select>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="card-footer text-center">
+                       <div class="flavour" id="add-to-cart">
+                           <div class="add-cart">
+                             <input class="add" type="submit" name="add" value="Add to cart">
+                           </div>
+                     </div>
+                  </div>
+              </div>
+               </div>
+<!-- end of hawaian -->
+
+<!-- Pepperoni -->
+<div class="col-md-4">
+  <div class="card">
+     <div class="card-header">
+       <div class="flavour-type ml-3">
+         <h5>Pepperoni</h5>
+         <p class="description">Peperoni-black olives</p>
+         <hr>
+       </div>
+       <div class="flavour">
+         <h6>Size</h6>
+         <select class="input-group price" name="Quantity">
+            <option>Small <span class="price">Ksh.450</span> </option>
+            <option>Medium <span class="price">Ksh.750</span> </option>
+            <option>Large <span class="price">Ksh.1500</span> </option>
+         </select>
+       </div>
+       <div class="flavour">
+         <h6>Quantity</h6>
+         <input class="quantity" type="number" name="number" value="1">
+       </div>
+
+       <div class="flavour ">
+         <h6>Total</h6>
+         <p class="price total">Ksh.</p>
+       </div>
+     </div>
+     <!-- End of card-header -->
+
+     <!-- Card body -->
+     <div class="card-body">
+       <div class="row">
+         <div class="col-md-6">
+           <div class="form-control flavour">
+             <h6>Toppings <span class="price">Ksh.150</span> </h6>
+             <select class="input-group" name="Quantity">
+                <option>None</option>
+                <option>Pepperoni</option>
+                <option>Mushrooms</option>
+                <option>Onion</option>
+                <option>Sausage</option>
+                <option>Bacon</option>
+                <option>Pineapple</option>
+                <option>Spinach</option>
+                <option>Extra cheese</option>
+                <option>Black OLives</option>
+                <option>Green peppers</option>
+             </select>
            </div>
+         </div>
+         <div class="col-md-6">
+           <div class="form-control flavour">
+             <h6>Crust <span class="price">Ksh.200</span> </h6>
+             <select class="input-group" name=""Quantity>
+                <option>None</option>
+                <option>Crispy</option>
+                <option>Stuffed</option>
+                <option>Gluten-free</option>
+                <option>Grilled</option>
+                <option>Flat bread</option>
+                <option>Cracker</option>
+             </select>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="card-footer text-center">
+       <div class="flavour" id="add-to-cart">
+           <div class="add-cart">
+             <input class="add" type="submit" name="add" value="Add to cart">
+           </div>
+     </div>
+  </div>
+</div>
+</div>
+             </div>
+
+
+
         </div>
       </div>
       </div>
