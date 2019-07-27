@@ -32,6 +32,7 @@
 }
 #button{
   display:inline-block;
+  transform: rotate(320deg);
 }
 #home{
   padding-right:25%;
@@ -50,8 +51,13 @@
 #home a{
   color: white;
   text-decoration: none;
+  transition:duration(3s);
 }
-
+.about{
+  color: white;
+  font-family: georgia;
+}
+/* Landing-page */
 .add{
   width: 100%;
   padding-top: 1%;
