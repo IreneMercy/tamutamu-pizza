@@ -56,6 +56,12 @@
 .about{
   color: white;
   font-family: georgia;
+  display: none;
+}
+#welcome{
+  margin-top: 5%;
+  color: white;
+  font-family: georgia;
 }
 /* Landing-page */
 .add{

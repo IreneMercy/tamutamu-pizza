@@ -4,9 +4,7 @@ function Pizza(size,topping,crust, name){
   this.crust = crust;
   this.name = name;
 }
-// function total(price, topt){
-//   return price+topt;
-// }
+
 $(document).ready(function(){
   $("form#myform").submit(function(event){
     event.preventDefault();
@@ -18,5 +16,8 @@ $(document).ready(function(){
     $("#total").last().append("Total:" + pname);
 
   total()
+  });
+  $(".about-toggle").click(function(){
+    $(".about").fadeToggle();
   });
 });
