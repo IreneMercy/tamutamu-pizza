@@ -4,6 +4,9 @@
   background-position: center;
   background-size: cover;
   position: absolute;
+  height: 100vh;
+
+
 }
 #pizza{
   font-family: 'Sedgwick Ave Display', cursive;
@@ -20,17 +23,35 @@
 }
 .banner-bg{
   position:relative;
-  background-color: black;
-  opacity: 0.8;
+  background-color:black;
   height: auto;
-}
-/* End of header */
+  height: 100vh;
+  opacity: 0.8;
 
-/* Size */
-.medium-size{
-  color: orange;
-  font-family: 'Sedgwick Ave Display', cursive;
+
 }
+#button{
+  display:inline-block;
+}
+#home{
+  padding-right:25%;
+  padding-left:25%;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color:crimson;
+  border: none;
+  font-family: 'Sedgwick Ave Display', cursive;
+
+}
+
+#home a:hover{
+  color:cyan;
+}
+#home a{
+  color: white;
+  text-decoration: none;
+}
+
 .add{
   width: 100%;
   padding-top: 1%;
@@ -42,48 +63,3 @@
   font-family: 'Sedgwick Ave Display', cursive;
   font-size:30px;
   border-radius: 10px;
-  /* border: 2px solid #000; */
-
-}
-.card{
-  font-family:cursive;
-  background-color:white;
-  height: auto;
-}
-.card-header{
-  color:orangered;
-}
-.card-footer{
-  text-transform: uppercase;
-}
-.flavour{
-  display: inline-block;
-  background-color: transparent;
-}
-.flavour h6{
-  color: black;
-}
-.price{
-  color: black;
-  font-family:georgia;
-}
-
-.quantity{
-  width: 20%;
-}
-.description{
-  color: black;
-}
-
-.flavour-type{
-  font-family: 'Sedgwick Ave Display', cursive;
-  color:orangered;
-}
-
-.input-group{
-  background-color: transparent;
-}
-.quantity{
-  background-color: transparent;
-}
-/* End of size */
