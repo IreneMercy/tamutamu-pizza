@@ -5,19 +5,36 @@ function Pizza(size,topping,crust, name){
   this.name = name;
 }
 
+
 $(document).ready(function(){
   $("form#myform").submit(function(event){
     event.preventDefault();
-    var sizep = $("#sizes option:selected").val();
-    var topp = $("#toppings option:selected").val();
-    var crustp = $("#crusts option:selected").val();
-    var pname = $("#flavour option:selected").val();
-    var delivery = $("#deliver").val()
+    var sizep = $("#sizes radio:checked").val();
+    var topp = $("#toppings checkbox:checked").val();
+    var crustp = $("#crusts checkbox:checked").val();
+    var pname = $("#flavour checkbox:checked").val();
+    var price =  0;
+      switch (sizep) {
+        case "small":
+          price = 450;
+          break;
+        case "medium":
+          price = 750;
+          break;
+        case "large":
+          price = 1500;
+          break;
+        default:sizep
 
-    $("#total").last().append("Total:" + pname);
+      }
+  $("#add").submit(function(event){
+    event.preventDefault();
+    $(".psize").append(price);
 
-  total()
   });
+});
+
+
   $(".about-toggle").click(function(){
     $(".about").fadeToggle();
   });
@@ -31,4 +48,7 @@ $(document).ready(function(){
     var location = prompt("Enter Location");
     alert(" Your pizza will be delivered at "  + location + " once you checkout ");
   });
+
+
+
 });

@@ -113,6 +113,9 @@
 #home-about{
   padding-top:15%;
 }
+.sizes{
+  font-size: 14px;
+}
 /* End of Landing-page */
 
 /* Order now */
@@ -137,6 +140,7 @@
 }
 .card-checkout{
   background-color: wheat;
+  float:right;
 }
 .card-checkout p{
   font-family: 'Sedgwick Ave Display', cursive;
