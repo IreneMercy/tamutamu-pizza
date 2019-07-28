@@ -5,6 +5,7 @@
   background-size: cover;
   position: absolute;
   height:auto;
+  
 
 
 }
@@ -33,14 +34,14 @@
 #button{
   display:inline-block;
   transform: rotate(320deg);
+  padding-bottom: 5%;
 }
 #order{
   display:inline-block;
   transform: rotate(360deg);
+
 }
 #home{
-  /* padding-right:25%;
-  padding-left:25%; */
   font-size: 20px;
   text-transform: uppercase;
   background-color:crimson;
@@ -101,6 +102,9 @@
   font-family: georgia;
   font-weight: bolder;
 }
+#home-about{
+  padding-top:15%;
+}
 /* End of Landing-page */
 
 /* Order now */
@@ -119,6 +123,9 @@
   text-transform: uppercase;
   font-family: 'Sedgwick Ave Display', cursive;
 
+}
+#add-pizza{
+  display: none;
 }
 .add{
   width: 100%;
