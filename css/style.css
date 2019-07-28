@@ -5,7 +5,7 @@
   background-size: cover;
   position: absolute;
   height:auto;
-  
+
 
 
 }
@@ -72,8 +72,9 @@
   color: orange;
   font-size: 22px;
 }
+
 .order{
- color: white;
+  color: white;
 }
 .order:hover{
   color: cyan;
@@ -84,9 +85,16 @@
   text-align: center;
   background-color:whitesmoke;
   color: black;
-  display: none;
+
 }
 
+.card-add-cart{
+  display: none;
+}
+.card-checkout{
+  float: right;
+  width:30%;
+}
 .card-body h6{
   float: left;
   color:orange;
@@ -127,6 +135,12 @@
 #add-pizza{
   display: none;
 }
+.card-checkout{
+  background-color: wheat;
+}
+.card-checkout p{
+  font-family: 'Sedgwick Ave Display', cursive;
+}
 .add{
   width: 100%;
   padding-top: 1%;
@@ -138,3 +152,4 @@
   font-family: 'Sedgwick Ave Display', cursive;
   font-size:30px;
   border-radius: 10px;
+/* End of order */

@@ -12,6 +12,7 @@ $(document).ready(function(){
     var topp = $("#toppings option:selected").val();
     var crustp = $("#crusts option:selected").val();
     var pname = $("#flavour option:selected").val();
+    var delivery = $("#deliver").val()
 
     $("#total").last().append("Total:" + pname);
 
@@ -23,7 +24,11 @@ $(document).ready(function(){
   $(".order").click(function(){
     $("#add-pizza").fadeToggle();
   });
-  $("#add-cart").click(function(){
-    $(".card").toggle();
+  $(".add-cart").click(function(){
+    $(".card-add-cart").show();
+  });
+  $(".deliver").click(function(){
+    var location = prompt("Enter Location");
+    alert(" Your pizza will be delivered at "  + location + " once you checkout ");
   });
 });
