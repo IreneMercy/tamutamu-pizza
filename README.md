@@ -22,3 +22,9 @@
 
 ## Copyright
 #### IreneMercy
+
+## License
+#### MIT License
+
+## Contact Details
+#### irenemercy700@gmail.com
