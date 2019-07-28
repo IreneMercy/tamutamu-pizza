@@ -4,7 +4,7 @@
   background-position: center;
   background-size: cover;
   position: absolute;
-  height: 100vh;
+  height:auto;
 
 
 }
@@ -25,10 +25,10 @@
   position:relative;
   background-color:black;
   height: auto;
-  height: 100vh;
   opacity: 0.8;
-
-
+}
+.buttons{
+  margin-bottom: 5%;
 }
 #button{
   display:inline-block;
@@ -39,8 +39,8 @@
   transform: rotate(360deg);
 }
 #home{
-  padding-right:25%;
-  padding-left:25%;
+  /* padding-right:25%;
+  padding-left:25%; */
   font-size: 20px;
   text-transform: uppercase;
   background-color:crimson;
@@ -66,13 +66,60 @@
   color: white;
   font-family: georgia;
 }
+.name{
+  font-family: 'Sedgwick Ave Display', cursive;
+  color: orange;
+  font-size: 22px;
+}
 .order{
  color: white;
 }
 .order:hover{
   color: cyan;
 }
-/* Landing-page */
+.card{
+  float:left;
+  width:30%;
+  text-align: center;
+  background-color:whitesmoke;
+  color: black;
+  display: none;
+}
+
+.card-body h6{
+  float: left;
+  color:orange;
+  text-transform: uppercase;
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size:14px;
+}
+
+.input-group span{
+  font-size: 14px;
+}
+#price{
+  font-family: georgia;
+  font-weight: bolder;
+}
+/* End of Landing-page */
+
+/* Order now */
+.hawaian{
+  background-color: white;
+  float:left;
+}
+.hawaian a{
+  text-decoration-line: none;
+  color: black;
+}
+
+#add{
+  float:right;
+  color:crimson;
+  text-transform: uppercase;
+  font-family: 'Sedgwick Ave Display', cursive;
+
+}
 .add{
   width: 100%;
   padding-top: 1%;
