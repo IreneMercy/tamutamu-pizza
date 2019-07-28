@@ -12,3 +12,13 @@
 #### On your terminal run the command git clone "project link"
 #### On your terminal  cd tamutamu-pizza
 #### On tour terminal run the command code. to open the project on your text editor
+
+
+## Technologies Used
+#### JQuery
+#### HTML
+#### CSS
+#### JavaScript
+
+## Copyright
+#### IreneMercy
