@@ -9,29 +9,24 @@ function Pizza(size,topping,crust, name){
 $(document).ready(function(){
   $("form.myform").submit(function(event){
     event.preventDefault();
-    var sizep = $("#sizes option:selected").val();
-    var topp = $("#toppings checkbox:checked").val();
-    var crustp = $("#crusts checkbox:checked").val();
-    var price =  0;
-      switch (sizep) {
-        case "small":
-          price = 450;
-          break;
-        case "medium":
-          price = 750;
-          break;
-        case "large":
-          price = 1500;
-          break;
-        default:sizep
+    var sizep = parseInt($("#sizes option:selected").val());
+    var topp = parseInt($(".toppings input:checked").val());
+    var crustp = parseInt($(".crusts input:checked").val());
+    var deliveryp = parseInt($(".delivery input:checked").val());
+    var quantity = parseInt($(".quantity").val());
+    var total = parseInt(sizep + topp + crustp + deliveryp);
+    var grandTotal = parseInt(total*quantity);
 
-      }
-      $(".psize").append(price);
+      $(".sprice").append(sizep);
+      $(".tprice").append(topp);
+      $(".cprice").append(crustp);
+      $(".dprice").append(deliveryp);
+      $(".total").append(total);
+      $(".ptotal").append(grandTotal);
 
-  // $(".purchase").submit(function(event){
-  //   event.preventDefault();
-  //
-  // });
+
+        $(".myform").hide();
+
 });
 
 
@@ -45,10 +40,16 @@ $(document).ready(function(){
     $(".card-add-cart").show();
   });
   $(".deliver").click(function(){
+    var deliveryp = parseInt($(".delivery input:checked").val());
+    alert("The delivery price is " + deliveryp);
     var location = prompt("Enter Location");
+    var contact = prompt("Enter phone number")
     alert(" Your pizza will be delivered at "  + location + " once you checkout ");
-  });
 
+  });
+  $("#checkout").click(function(){
+    $(".card-checkout").hide();
+  });
 
 
 });

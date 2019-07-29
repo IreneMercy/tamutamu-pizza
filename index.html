@@ -33,9 +33,9 @@
                             <div id="sizes">
                               <div class="flavour">
                                 <select class="input-group sizes">
-                                   <option value="small">Small <span class="price">Ksh.450</span> </option>
-                                   <option value="medium">Medium  <span class="price">Ksh.750</span> </option>
-                                   <option value="large">Large <span class="price">Ksh.1500</span> </option>
+                                   <option value="450">Small <span class="price">Ksh.450</span> </option>
+                                   <option value="750">Medium  <span class="price">Ksh.750</span> </option>
+                                   <option value="1500">Large <span class="price">Ksh.1500</span> </option>
                                 </select>
                               </div>
                               <br>
@@ -44,9 +44,11 @@
                           <div class="col-md-6">
                             <h6>Delivery! <span id="price">Ksh.500</span> </h6>
                             <hr>
-                            <div class="input-group text-center sizes">
-                              <input class="mt-1 deliver" type="radio" name="delivery" value="delivery"><span>Yes</span>
-                              <input class="mt-1 no-deliver ml-5" type="radio" name="delivery" value="delivery"><span>No</span>
+                            <div class="input-group text-center">
+                              <div class="delivery">
+                                <input class="mt-1 deliver" type="radio" name="delivery" value="500"><span>Yes</span>
+                                <input class="mt-1 no-delive ml-5" type="radio" name="delivery" value="0"><span>No</span>
+                              </div>
 
                             </div>
                             <br>
@@ -57,47 +59,49 @@
                              <h6>Extra topping <span id="price">Ksh.150</span> </h6>
                              <hr>
                              <div class="input-group text-center crust">
-                               <input class="mt-1" type="checkbox" name="topping" value="small"><span>Onion</span>
+                               <input class="mt-1" type="checkbox" name="topping" value="150"><span>Onion</span>
                              </div>
                              <div class="input-group crust">
-                               <input class="mt-1" type="checkbox" name="topping" value="medium"><span>Spinach</span>
+                               <input class="mt-1" type="checkbox" name="topping" value="120"><span>Spinach</span>
                              </div>
                              <div class="input-group crust">
-                               <input class="mt-1" type="checkbox" name="topping" value="large"><span>Large</span>
+                               <input class="mt-1" type="checkbox" name="topping" value="100"><span>Extra Cheese</span>
                              </div>
                              <div class="input-group crust">
-                               <input class="mt-1" type="checkbox" name="topping" value="medium"><span>Sausage</span>
+                               <input class="mt-1" type="checkbox" name="topping" value="130"><span>Sausage</span>
                              </div>
                              <div class="input-group crust">
-                               <input class="mt-1" type="checkbox" name="topping" value="large"><span>Bacon</span>
+                               <input class="mt-1" type="checkbox" name="topping" value="150"><span>Bacon</span>
                              </div>
                            </div>
                            <br>
                            <hr>
-                           <div class="toppings">
+                           <div class="crusts">
                              <h6>Crust <span id="price">Ksh:200</span> </h6>
                              <hr>
                              <div class="input-group text-center crust">
-                               <input class="mt-1" type="checkbox" name="topping" value="small"><span>Crispy</span>
+                               <input class="mt-1" type="checkbox" name="topping" value="200"><span>Crispy</span>
                              </div>
                              <div class="input-group crust">
-                               <input class="mt-1" type="checkbox" name="topping" value="medium"><span>Cracker</span>
+                               <input class="mt-1" type="checkbox" name="topping" value="250"><span>Cracker</span>
                              </div>
                              <div class="input-group crust">
-                               <input class="mt-1" type="checkbox" name="topping" value="large"><span>Stuffed</span>
+                               <input class="mt-1" type="checkbox" name="topping" value="210"><span>Stuffed</span>
                              </div>
                              <div class="input-group crust">
-                               <input class="mt-1" type="checkbox" name="topping" value="medium"><span>Romana</span>
+                               <input class="mt-1" type="checkbox" name="topping" value="230"><span>Romana</span>
                              </div>
                              <div class="input-group crust">
-                               <input class="mt-1" type="checkbox" name="topping" value="large"><span>Grilled</span>
+                               <input class="mt-1" type="checkbox" name="topping" value="250"><span>Grilled</span>
                              </div>
                            </div>
                          </div>
                     </div>
                     <div class="card-footer text-center">
+                      <span>Quantity</span>
+                      <input class="quantity" type="number" name="quantity"  min="1" max="5">
                       <div class="flavour" id="cart">
-                          <div class="add-cart">
+                          <div class="add-cart pt-3">
                             <input class="add" type="submit" name="add" value="Purchase">
                           </div>
                     </div>
@@ -124,12 +128,12 @@
                 </div>
                 <div class="card-footer text-center">
                   <div class="flavour" id="add-to-cart">
-                    <p class="total text-uppercase">total: <span class="ptotal"></span> <input type="number" name="quantity" value="quantity" min="1" max="5"></p>
+                    <!-- <p class="total text-uppercase">total: <span class="ptotal"></span></p> -->
                     <div class="grand-total">
                       <p class="gtotal text-uppercase">Grandtotal: <span class="ptotal"></span> </p>
                     </div>
                       <div class="add-cart">
-                        <input class="add" type="submit" name="add" value="Checkout">
+                        <input class="add" id="checkout" type="submit" name="add" value="Checkout">
                       </div>
                 </div>
              </div>
