@@ -24,7 +24,7 @@ $(document).ready(function(){
       $(".total").append(total);
       $(".ptotal").append(grandTotal);
 
-
+        alert("The total price is " + grandTotal)
         $(".myform").hide();
 
 });
@@ -49,6 +49,7 @@ $(document).ready(function(){
   });
   $("#checkout").click(function(){
     $(".card-checkout").hide();
+    location.reload();
   });
 
 
