@@ -7,12 +7,11 @@ function Pizza(size,topping,crust, name){
 
 
 $(document).ready(function(){
-  $("form#myform").submit(function(event){
+  $("form.myform").submit(function(event){
     event.preventDefault();
-    var sizep = $("#sizes radio:checked").val();
+    var sizep = $("#sizes option:selected").val();
     var topp = $("#toppings checkbox:checked").val();
     var crustp = $("#crusts checkbox:checked").val();
-    var pname = $("#flavour checkbox:checked").val();
     var price =  0;
       switch (sizep) {
         case "small":
@@ -27,11 +26,12 @@ $(document).ready(function(){
         default:sizep
 
       }
-  $("#add").submit(function(event){
-    event.preventDefault();
-    $(".psize").append(price);
+      $(".psize").append(price);
 
-  });
+  // $(".purchase").submit(function(event){
+  //   event.preventDefault();
+  //
+  // });
 });
 
 
