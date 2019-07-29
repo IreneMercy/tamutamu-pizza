@@ -48,6 +48,7 @@ $(document).ready(function(){
 
   });
   $("#checkout").click(function(){
+    alert("Youve succesfully made an order" + "Thank you for choosing Tamutamu")
     $(".card-checkout").hide();
     location.reload();
   });
